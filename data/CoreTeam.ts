@@ -12,7 +12,7 @@ export const coreTeam: TeamMember[] = [
         lastName: "Agarwala",
         imageURL: "/team/ankush-agarwala.jpg",
         post: "Vice Chair",
-        linkedinURL: "",
+        linkedinURL: "https://www.linkedin.com/in/ankush-agarwala-6444301a8/",
         githubURL: "",
     },
     {
