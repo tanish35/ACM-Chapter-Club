@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, FormEvent } from "react";
-import { db, collection, addDoc } from "../../firebase"; // Import Firebase methods
+// import { db, collection, addDoc } from "../../firebase"; // Import Firebase methods
 
 interface FormData {
   firstName: string;
@@ -35,7 +35,7 @@ export default function ContactPage() {
     event.preventDefault();
 
     try {
-      await addDoc(collection(db, "contactUs"), formData);
+      // await addDoc(collection(db, "contactUs"), formData);
       setShowAlert(true);
       setTimeout(() => setShowAlert(false), 3000);
       setFormData({

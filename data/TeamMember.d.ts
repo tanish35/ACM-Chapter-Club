@@ -1,4 +1,5 @@
 type TeamMember = {
+    honorifics?: string; 
     firstName: string;
     lastName: string;
     imageURL: string;
@@ -9,7 +10,8 @@ type TeamMember = {
         | "Treasurer"
         | "Technical Lead"
         | "Membership Chair"
-        | "Webmaster";
+        | "Webmaster"
+        | "Faculty Sponsor";
     linkedinURL?: string;
     githubURL?: string;
     instagramURL?: string;
