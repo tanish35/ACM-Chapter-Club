@@ -18,7 +18,7 @@ export const coreTeam: TeamMember[] = [
     {
         firstName: "Swapnaneel",
         lastName: "Ray",
-        imageURL: "/team/swapnaneel-ray.jpg",
+        imageURL: "/team/swapnaneel-ray.jpeg",
         post: "Secretary",
         linkedinURL: "https://www.linkedin.com/in/swapnaneel-ray-33a110169/?originalSubdomain=in",
         githubURL: "https://github.com/SwapnaneelR",
@@ -58,7 +58,7 @@ export const coreTeam: TeamMember[] = [
     {
         firstName: "Rishav",
         lastName: "Chowdhury",
-        imageURL: "/team/rishav-chowdhury.jpg",
+        imageURL: "/team/rishav-chowdhury.jpeg",
         post: "Treasurer",
         linkedinURL: "https://www.linkedin.com/in/rishav-chowdhury-81b652295/",
         githubURL: "",
