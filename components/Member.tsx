@@ -7,10 +7,11 @@ export default function Member({ member }: { member: TeamMember }) {
     return (
         <div className="flex flex-col justify-center items-center p-6 bg-white rounded-md shadow">
             <img
-                src={member.imageURL}
-                alt={`${member.firstName} ${member.lastName} profile picture`}
-                className="object-cover w-full max-w-[192px] rounded-full shadow"
+            src={member.imageURL}
+            alt={`${member.firstName} ${member.lastName} profile picture`}
+            className="w-48 h-48 object-cover rounded-full shadow"
             />
+
             <span className="flex flex-col mt-6 justify-center items-center">
                 <p className=" font-semibold text-center my-1">{member.lastName}, {member.firstName}</p>
                 <p className="text-center font-medium text-gray-600 ">
