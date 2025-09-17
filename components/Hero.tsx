@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Code, Zap, Users } from "lucide-react";
 
+/**
+ * Animated hero section for the ACM Student Chapter landing area.
+ *
+ * Renders a full-screen, client-side hero with layered animated background orbs,
+ * a subtle grid and floating particles, decorative rotating icons, a gradient-animated
+ * headline ("ACM Student Chapter") with a subheading, a short descriptive line,
+ * CTA buttons ("Join Us" and "Learn More"), animated stats (Members, Events, Projects),
+ * and a bottom-centered scroll indicator. Animations are driven by Framer Motion
+ * and styling uses Tailwind CSS utility classes.
+ */
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-center text-white px-6">
