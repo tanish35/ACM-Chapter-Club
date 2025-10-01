@@ -61,6 +61,6 @@ export const coreTeam: TeamMember[] = [
         imageURL: "/team/rishav-chowdhury.jpeg",
         post: "Treasurer",
         linkedinURL: "https://www.linkedin.com/in/rishav-chowdhury-81b652295/",
-        githubURL: "",
+        githubURL: "https://github.com/GODSPEED482",
     },
 ];
