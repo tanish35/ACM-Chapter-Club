@@ -1,9 +1,10 @@
 type TeamMember = {
-    honorifics?: string; 
+    honorifics?: string;
     firstName: string;
     lastName: string;
     imageURL: string;
     post: string;
+    bio?: string;
     linkedinURL?: string;
     githubURL?: string;
     instagramURL?: string;
