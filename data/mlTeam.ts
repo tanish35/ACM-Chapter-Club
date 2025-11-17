@@ -1,7 +1,7 @@
 export const mlTeam: TeamMember[] = [
     {
         firstName: "Sauhardya",
-        lastName: "Passport Photo",
+        lastName: "Hazra",
         imageURL: "/team/ml-team/Sauhardya-passport-photo.jpeg",
         post: "Core Member",
         linkedinURL: "https://www.linkedin.com/in/sauhardya-hazra-b44110324",
