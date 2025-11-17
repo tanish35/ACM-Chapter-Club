@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 function NavLinkListItem({ link, text }: { link: string; text: String }) {
     return (
@@ -13,7 +16,39 @@ function NavLinkListItem({ link, text }: { link: string; text: String }) {
     );
 }
 
+function NavDropdown({ text, items }: { text: string; items: { link: string; text: string }[] }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <li className="relative" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
+            <button className="p-4 block text-sm font-medium hover:text-[#005a83]">
+                {text}
+            </button>
+            {isOpen && (
+                <ul className="absolute left-0 mt-0 bg-white shadow-lg rounded-md min-w-[150px] z-50">
+                    {items.map((item) => (
+                        <li key={item.link}>
+                            <Link
+                                href={item.link}
+                                className="block px-4 py-2 text-sm hover:bg-gray-100 hover:text-[#005a83]"
+                            >
+                                {item.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </li>
+    );
+}
+
 export default function Navbar() {
+    const recruitmentItems = [
+        { link: "/recruitment/ml", text: "ML" },
+        { link: "/recruitment/web3", text: "WEB3" },
+        { link: "/recruitment/web-dev", text: "Web Dev" }
+    ];
+
     return (
         <header>
             <nav className="flex flex-wrap items-center justify-between w-full px-4 py-3 text-lg text-gray-700 md:py-0 bg-white">
@@ -39,6 +74,7 @@ export default function Navbar() {
                     <NavLinkListItem link="/" text="Home" />
                     <NavLinkListItem link="/contact" text="Contact" />
                     <NavLinkListItem link="/events" text="Events" />
+                    <NavDropdown text="Recruitment" items={recruitmentItems} />
                     <NavLinkListItem link="/register" text="Register" />
                 </ul>
             </nav>
