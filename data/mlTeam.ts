@@ -17,4 +17,15 @@ export const mlTeam: TeamMember[] = [
         linkedinURL: " https://www.linkedin.com/in/shraman-banerjee-385200303/",
         githubURL: " https://github.com/shramanb113",
     },
+
+    {
+        firstName: "Soumyajit",
+        lastName: "Ghosh",
+        imageURL: "team/ml-team/Soumyajit-Ghosh.jpg",
+        post: "Core Member",
+        bio: "Machine learning enthusiast, exploring core machine learning, generative models, model deployment.",
+        linkedinURL: "https://www.linkedin.com/in/soumyajit-ghosh-000496pfn6/",
+        githubURL: "https://github.com/hunkycolony-003/",
+    },
+    
 ];
