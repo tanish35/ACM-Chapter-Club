@@ -21,7 +21,7 @@ export const mlTeam: TeamMember[] = [
     {
         firstName: "Soumyajit",
         lastName: "Ghosh",
-        imageURL: "team/ml-team/Soumyajit-Ghosh.jpg",
+        imageURL: "/team/ml-team/Soumyajit-Ghosh.jpg",
         post: "Core Member",
         bio: "Machine learning enthusiast, exploring core machine learning, generative models, model deployment.",
         linkedinURL: "https://www.linkedin.com/in/soumyajit-ghosh-000496pfn6/",
